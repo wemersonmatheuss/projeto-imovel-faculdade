@@ -1,47 +1,15 @@
 package locacao_imoveis;
 
-public class Cliente {
+public class Cliente extends Pessoa {
 
-    private String nome;
-    private String cpf;
-    private String telefone;
-
-    public Cliente (String nome, String cpf, String telefone) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
-
+    public Cliente(String nome, String cpf, String telefone){
+        super(nome, cpf, telefone);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public void exibirinfo () {
-        System.out.println("Cliente:");
-
-        System.out.println("Nome: " + nome + ", CPF: " + cpf + ", Telefone: " + telefone);
-
-        System.out.println("");
+    @Override
+    public void exibirInfo() {
+        System.out.println("Cliente: " + getNome());
+        System.out.println("Cpf: " + getCpf());
+        System.out.println("Telefone: " + getTelefone());
     }
 }
