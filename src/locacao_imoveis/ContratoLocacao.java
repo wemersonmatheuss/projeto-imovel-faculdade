@@ -11,7 +11,7 @@ public class ContratoLocacao {
     private double valorMensal;
     private boolean ativo;
 
-    public ContratoLocacao(Cliente cliente, Imovel imovel, LocalDate dataInicio, LocalDate dataTermino, double valorMensal) {
+    public ContratoLocacao(Cliente cliente, Imovel imovel, LocalDate dataInicio, LocalDate dataTermino) {
         this.cliente = cliente;
         this.imovel = imovel;
         this.dataInicio = dataInicio;
@@ -50,5 +50,17 @@ public class ContratoLocacao {
 
     public void setDataTermino(LocalDate dataTermino) {
         this.dataTermino = dataTermino;
+    }
+
+    public void exbirInfo () {
+        System.out.println("Contrato:");
+
+        System.out.println("");
+
+        cliente.exibirinfo();
+
+        imovel.exibirInfo();
+
+        System.out.println("Data de inicio: " + dataInicio + ", Data de termino: " + dataTermino);
     }
 }

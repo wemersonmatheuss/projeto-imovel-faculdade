@@ -36,4 +36,12 @@ public class Cliente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    public void exibirinfo () {
+        System.out.println("Cliente:");
+
+        System.out.println("Nome: " + nome + ", CPF: " + cpf + ", Telefone: " + telefone);
+
+        System.out.println("");
+    }
 }

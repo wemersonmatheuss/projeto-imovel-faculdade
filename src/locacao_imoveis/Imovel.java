@@ -46,4 +46,12 @@ public class Imovel {
     public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
     }
+
+    public void  exibirInfo () {
+        System.out.println("Imovel:");
+
+        System.out.println("Endereço: " + endereco + ", Valor do Aluguel: " + valorAluguel + ", Tipo: " + tipo + ", Disponivel: " + disponivel);
+
+        System.out.println("");
+    }
 }
