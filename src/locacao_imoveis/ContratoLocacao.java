@@ -57,7 +57,7 @@ public class ContratoLocacao {
 
         System.out.println("");
 
-        cliente.exibirinfo();
+        cliente.exibirInfo();
 
         imovel.exibirInfo();
 
